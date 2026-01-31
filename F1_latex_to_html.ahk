@@ -13,6 +13,8 @@ SetWorkingDir, C:\Program Files\tth_exe
 F1::
 Clipped := Clip() ; assign selected text to var Clipped
 Clipped := StrReplace(Clipped, "\vec{x}", "\overrightarrow{x}")
+Clipped := StrReplace(Clipped, "\vec{y}", "\overrightarrow{y}")
+Clipped := StrReplace(Clipped, "\vec{z}", "\overrightarrow{z}")
 
 ; 1. write clipboard to file
 output := FileOpen("C:\Program Files\tth_exe\test.tex", "w")
