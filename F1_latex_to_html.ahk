@@ -3,7 +3,7 @@
 
 #SingleInstance force
 #NoEnv
-#IfWinActive ahk_exe sm18.exe
+#IfWinActive ahk_exe sm19.exe
 #Include %A_LineFile%\..\Clip.ahk
 DetectHiddenWindows On
 SendMode Input
