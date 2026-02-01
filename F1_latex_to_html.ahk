@@ -15,6 +15,9 @@ Clipped := Clip() ; assign selected text to var Clipped
 Clipped := StrReplace(Clipped, "\vec{x}", "\overrightarrow{x}")
 Clipped := StrReplace(Clipped, "\vec{y}", "\overrightarrow{y}")
 Clipped := StrReplace(Clipped, "\vec{z}", "\overrightarrow{z}")
+Clipped := StrReplace(Clipped, "\mathbb{R}", "\mathbf{R}")
+Clipped := StrReplace(Clipped, "\mathbb{N}", "\mathbf{N}")
+Clipped := StrReplace(Clipped, "\mathbb{C}", "\mathbf{C}")
 
 ; 1. write clipboard to file
 output := FileOpen("C:\Program Files\tth_exe\test.tex", "w")
@@ -46,6 +49,8 @@ if not ErrorLevel
 trimmedContents := regexreplace(Contents, "^\s+")
 
 trimmedContents := StrReplace(trimmedContents, "<b>R</b>", "&#8477;")
+trimmedContents := StrReplace(trimmedContents, "<b>N</b>", "&#8469;")
+trimmedContents := StrReplace(trimmedContents, "<b>C</b>", "&#8450;")
 
 }
 
