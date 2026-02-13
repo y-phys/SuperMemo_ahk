@@ -19,6 +19,8 @@ Clipped := StrReplace(Clipped, "\mathbb{R}", "\special{html:&#8477;}")
 Clipped := StrReplace(Clipped, "\mathbb{N}", "\special{html:&#8469;}")
 Clipped := StrReplace(Clipped, "\mathbb{C}", "\special{html:&#8450;}")
 Clipped := StrReplace(Clipped, "\vdash", "\special{html:&#8866;}")
+Clipped := StrReplace(Clipped, "\mathfrak{F}", "\special{html:&#8465;}")
+Clipped := StrReplace(Clipped, "\mathfrak{E}", "\special{html:&#322;}")
 
 ; 1. write clipboard to file
 output := FileOpen("C:\Program Files\tth_exe\test.tex", "w")
